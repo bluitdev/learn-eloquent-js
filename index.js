@@ -14,4 +14,19 @@ function hashPrint(n) {
   }
   console.log(kq);
 }
-hashPrint(8);
+//hashPrint(8);
+
+// ex2 - p38 - Eloquent Javascript
+function fizzBuzzPrint(n) {
+  let result = '';
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 == 0) {
+      result += 'Fizz ';
+      if (i % 5 == 0) result += 'Buzz ';
+    } else if (i % 3 == 0 || i % 5 == 0) result += 'FizzBuzz ';
+    else result += i;
+    result += ' ';
+  }
+  console.log(result);
+}
+fizzBuzzPrint(15);
